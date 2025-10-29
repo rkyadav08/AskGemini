@@ -25,7 +25,7 @@ st.markdown("""
     /* Set a default dark text color for high contrast */
     .stApp {
         background-color: #f7f3e8;
-        color: #3a3a3a; /* Dark gray-brown for all default text */
+        color: #dddddd; /* Dark gray-brown for all default text */
     }
 
     /* Titles, Subheaders, and general markdown text */
@@ -175,3 +175,4 @@ if st.session_state.answer:
 if st.session_state.transcript:
     with st.expander("📜 View Full Transcript"):
         st.text_area("", st.session_state.transcript, height=300)
+
