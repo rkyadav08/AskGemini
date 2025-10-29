@@ -1,5 +1,11 @@
-streamlit==1.38.0
+# Core app
+streamlit==1.39.0
+
+# YouTube transcripts
 youtube-transcript-api==0.6.2
-google-generativeai==0.8.2
-protobuf==4.25.3
-requests==2.31.0
+
+# Gemini API (compatible set)
+google-generativeai==0.8.3
+cachetools==5.5.0   # required for Streamlit 1.39 compatibility
+protobuf<6.0.0       # prevents version conflict in Streamlit Cloud
+
