@@ -44,7 +44,7 @@ st.markdown("""
     /* Button: Stays high-contrast (dark bg, light text) */
     .stButton>button {
         background-color: #002147; /* Deep Navy */
-        color: #f7f3e8;            /* Warm off-white */
+        color: #333333;            /* Warm off-white */
         border-radius: 4px;
         border: none;
         font-weight: 600; /* Make button text slightly bolder */
@@ -176,3 +176,4 @@ if st.session_state.answer:
 if st.session_state.transcript:
     with st.expander("📜 View Full Transcript"):
         st.text_area("", st.session_state.transcript, height=300)
+
