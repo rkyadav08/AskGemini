@@ -44,7 +44,7 @@ st.markdown("""
     /* Button: Stays high-contrast (dark bg, light text) */
     .stButton>button {
         background-color: #002147; /* Deep Navy */
-        color: #333333;            /* Warm off-white */
+        color: #333333;           
         border-radius: 4px;
         border: none;
         font-weight: 600; /* Make button text slightly bolder */
@@ -53,7 +53,7 @@ st.markdown("""
     /* Inputs: Add a much stronger border */
     .stTextInput>div>div>input, 
     .stTextArea>div>div>textarea {
-        background-color: #fdfdfa; /* Soft ivory */
+        background-color: #333333; /* Soft ivory */
         /* Increase border width and darkness for visibility */
         border: 1.5px solid #a9a9a9; /* A visible mid-gray border */
         border-radius: 4px;
@@ -131,7 +131,7 @@ Question: {question}
 # ----------------------------
 # 🧠 STREAMLIT APP LOGIC
 # ----------------------------
-st.title("📺 YouTube Video Q&A with Gemini")
+st.title("📺 AskGemini")
 st.markdown("Get answers to your questions directly from YouTube video transcripts using **Gemini AI**!")
 
 # Session state initialization
@@ -176,4 +176,5 @@ if st.session_state.answer:
 if st.session_state.transcript:
     with st.expander("📜 View Full Transcript"):
         st.text_area("", st.session_state.transcript, height=300)
+
 
