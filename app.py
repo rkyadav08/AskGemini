@@ -53,7 +53,7 @@ st.markdown("""
     /* Inputs: Add a much stronger border */
     .stTextInput>div>div>input, 
     .stTextArea>div>div>textarea {
-        background-color: #333333; /* Soft ivory */
+        background-color: #303030; /* Soft ivory */
         /* Increase border width and darkness for visibility */
         border: 1.5px solid #a9a9a9; /* A visible mid-gray border */
         border-radius: 4px;
@@ -176,5 +176,6 @@ if st.session_state.answer:
 if st.session_state.transcript:
     with st.expander("📜 View Full Transcript"):
         st.text_area("", st.session_state.transcript, height=300)
+
 
 
