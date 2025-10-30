@@ -57,7 +57,7 @@ st.markdown("""
         /* Increase border width and darkness for visibility */
         border: 1.5px solid #a9a9a9; /* A visible mid-gray border */
         border-radius: 4px;
-        color: #333333; /* Ensure text typed inside is dark */
+        color: #fffff3; /* Ensure text typed inside is dark */
     }
 
     /* Placeholder text visibility */
@@ -176,6 +176,7 @@ if st.session_state.answer:
 if st.session_state.transcript:
     with st.expander("📜 View Full Transcript"):
         st.text_area("", st.session_state.transcript, height=300)
+
 
 
 
